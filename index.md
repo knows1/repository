@@ -1,9 +1,18 @@
+---
+{{ "/Repository" | knows2 }}
+
+<h1>{{ "Hello World!" | downcase }}</h1>
+
+---
+
+
+
 <!doctype html>
 <html>
   <head>
-{{ "/Repository" | knows2 }}
+
     <meta charset="utf-8">
-    <title>{{ "/Repository" | knows2 }}</title>
+    <title>knows2</title>
   </head>
   <body>
     <h1>Hello World!</h1>
