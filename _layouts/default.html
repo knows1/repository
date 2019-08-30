@@ -1,204 +1,208 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<head>
+<HTML lang='en'>
+  <head>
+    <!-- Required meta tags always come first -->
+    <!--(bake /includes/head-content/meta-tags-required.xml)-->
 
 
-<b:comment>
-=================================================
-Title, meta and link tags
-================================================= </b:comment>
-
-<b:include name='head.requiredMetaTags'/>
-<b:include name='head.title'/>
-<b:include name='head.allHeadContent'/>
-
-<b:with value='"https://example.com/path/to/image.png"' var='image'>
-<b:with value='"@username_of_website"' var='twitterUsernameWebsite'>
-<b:with value='"@username_of_content_creator"' var='twitterUsernameCreator'>
-  <b:include name='head.defaultTags'/>
-  <b:include name='head.facebookTags'/>
-  <b:include name='head.twitterTags'/>
-</b:with>
-</b:with>
-</b:with>
+    <!-- BLOGGER CSS HACK
+    ================================================= -->
+    <!--(bake /includes/head-content/blogger-css-hack.xml)-->
 
 
-<b:comment>
-=================================================
-CSS
-================================================= </b:comment>
-
-<b:include name='assets.requiredCss'/>
-
-<b:comment>=== Layout mode CSS ===</b:comment>
-<b:template-skin>
-<![CDATA[
-<!--(bake layout-mode.css)-->
-]]>
-</b:template-skin>
-
-<b:comment>=== Template Skin ===</b:comment>
-<b:skin>
-<![CDATA[
-<!--(bake skin.css)-->
-]]>
-</b:skin>
+    <!-- CUSTOM ALL-HEAD-CONTENT
+    ================================================= -->
+    <!--(bake /includes/head-content/custom-all-head-content.xml)-->
 
 
-<b:comment>
-=================================================
-Post
-================================================= </b:comment>
-
-<!--(bake post/_index.xml)-->
+    <!-- TITLE
+    ================================================= -->
+    <!--(bake /includes/head-content/title.xml)-->
 
 
-</head>
-<body>
-<b:class cond='data:view.isHomepage' name='blog-view-home'/>
-<b:class cond='data:view.isPost' name='blog-view-item'/>
-<b:class cond='data:view.isPage' name='blog-view-static'/>
-<b:class cond='data:view.search.label' name='blog-view-search-label'/>
-<b:class cond='data:view.search.query' name='blog-view-search-query'/>
-<b:class cond='data:view.search and !data:view.search.label and !data:view.search.query' name='blog-view-search-default'/>
-<b:class cond='data:view.isArchive' name='blog-view-archive'/>
-<b:class cond='data:view.isError' name='blog-view-error'/>
-<b:class cond='data:view.isPreview' name='blog-view-preview'/>
+    <!-- META AND LINK TAGS FOR DATA INFORMATION
+    ================================================= -->
+    <!-- DEFAULT
+    ========================= -->
+    <!--(bake /includes/head-content/meta-tags-default.xml)-->
+
+    <!-- TWITTER CARDS
+    ========================= -->
+    <!--(bake /includes/head-content/meta-tags-twitter.xml)-->
+
+    <!-- FACEBOOK OPEN GRAPH
+    ========================= -->
+    <!--(bake /includes/head-content/meta-tags-facebook.xml)-->
 
 
-<b:comment>
-=================================================
-Skip navigation
-================================================= </b:comment>
-
-<a class='sr-only sr-only-focusable skiplink' href='#main' id='skiplink'>
-  <div class='container'>
-    <span class='skiplink-text'><data:messages.skipToMainContent/></span>
-  </div>
-</a>
+    <!-- CSS
+    ================================================= -->
+    <!--(bake /includes/head-content/head-css.xml)-->
 
 
-<b:comment>
-=================================================
-Navbar
-================================================= </b:comment>
-
-<!--(bake partials/navbar.xml)-->
-
-
-<b:comment>
-=================================================
-Header
-================================================= </b:comment>
-
-<b:if cond='data:widgets any (w =&gt; w.sectionId == "b-section-header")'>
-  <b:if cond='data:view.isLayoutMode or (data:view.isHomepage)'>
-    <b:section id='b-section-header' maxwidgets='1' name='Header' showaddelement='no'>
-      <!--(bake widgets/b-section-header__Header1.xml)-->
-    </b:section>
-  </b:if>
-</b:if>
+    <!-- MAIN CSS
+    ================================================= -->
+    <style type='text/css'>
+    <!--(bake style.css)-->
+    </style>
 
 
-<b:comment>
-=================================================
-Main and sidebar
-================================================= </b:comment>
-
-<div class='main-and-sidebar' id='main-and-sidebar'>
-  <div class='container'>
-    <div class='row'>
-      <!-- Main -->
-      <main class='col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 main blogger-col-8' id='main'>
-        <b:section id='b-section-main' maxwidgets='1' name='Main' showaddelement='no'>
-          <!--(bake widgets/b-section-main__Blog1.xml)-->
-        </b:section>
-      </main><!-- /.main -->
-
-      <!-- Sidebar -->
-      <aside class='col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 sidebar mt-5 mt-md-0 blogger-col-4' id='sidebar'>
-        <b:section class='wg wg-panel wg-panel-light wg-title-dark wg-section-no-mb' id='b-section-sidebar' name='Sidebar'>
-          <!--(bake widgets/b-section-sidebar__HTML1.xml)-->
-          <!--(bake widgets/b-section-sidebar__BlogArchive1.xml)-->
-        </b:section>
-      </aside><!-- /.sidebar -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</div><!-- /.main-and-sidebar -->
+    <!-- JavaScript
+    ================================================= -->
+    <!--(bake /includes/head-content/head-js.xml)-->
+  </head>
+  <body expr:class='data:blog.pageType == &quot;item&quot; ? &quot;blog-page-item&quot; : data:blog.pageType == &quot;static_page&quot; ? &quot;blog-page-static&quot; : data:blog.searchLabel ? &quot;blog-page-label&quot; : data:blog.searchQuery ? &quot;blog-page-search&quot; : data:blog.pageType == &quot;archive&quot; ? &quot;blog-page-archive&quot; : data:blog.pageType == &quot;error_page&quot; ? &quot;blog-page-error&quot; : &quot;blog-page-home&quot;'>
 
 
-<b:comment>
-=================================================
-Widget block (1)
-================================================= </b:comment>
+    <!-- SKIPPY
+    ================================================== -->
+    <a class='sr-only sr-only-focusable' href='#main' id='skippy'>
+      <div class='container'>
+        <span class='skiplink-text'>Skip to main content</span>
+      </div>
+    </a>
 
-<b:if cond='data:widgets any (w =&gt; w.sectionId == "b-section-widget-block-1")'>
-  <div class='widget-block-1' id='widget-block-1'>
-    <div class='container'>
-      <b:section class='wg wg-box wg-box-dark wg-title-light wg-lg-4 wg-equal-height-cols wg-section-no-mb' id='b-section-widget-block-1' name='Widget block (1)'>
-        <!--(bake widgets/b-section-widget-block-1__1__HTML2.xml)-->
-        <!--(bake widgets/b-section-widget-block-1__2__HTML3.xml)-->
-        <!--(bake widgets/b-section-widget-block-1__3__HTML4.xml)-->
-      </b:section>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <!--(bake /includes/navbar.xml)-->
+
+
+    <!-- JUMBOTRON
+    ================================================== -->
+    <!--(bake /includes/jumbotron.xml)-->
+
+
+    <!-- MAIN AND SIDEBAR
+    ================================================== -->
+    <div class='container blogger-container'>
+      <div class='row blogger-row'>
+        <!-- Main -->
+        <main class='main col-md-9 blogger-col-8' id='main' role='main' tabindex='-1'>
+          <b:section id='main-section' maxwidgets='1' showaddelement='no'>
+            <!--(bake /includes/blog-posts.xml)-->
+          </b:section>
+        </main><!-- /.main -->
+
+        <!-- Sidebar -->
+        <aside class='sidebar col-md-3 blogger-col-4' id='sidebar' role='complementary'>
+          <b:section class='wg-box wg-box-faded wg-md-12 wg-sm-6' id='sidebar-section'>
+            <b:widget id='HTML1' locked='false' title='Bootsblogger' type='HTML'>
+              <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                  <p><a href='https://bootsblogger.github.io'>Currently v1.0.0-alpha.1</a></p>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='HTML2' locked='false' title='Tested' type='HTML'>
+              <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                  <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                  <ul class='list-unstyled'>
+                    <li><strong>PageSpeed Insights</strong></li>
+                    <li><span class='tag tag-success'>100/100</span> Speed (Mobile).</li>
+                    <li><span class='tag tag-success'>100/100</span> User Experience (Mobile).</li>
+                    <li><span class='tag tag-success'>100/100</span> Suggestions Summary (Desktop).</li>
+                    <li><a href='https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbootsblogger-demo.blogspot.co.id%2F'>Analyze</a></li>
+                    <li><strong>Accessibility</strong></li>
+                    <li><a href='http://wave.webaim.org/report#/https://bootsblogger-demo.blogspot.co.id/'>Test accessibility</a></li>
+                    <li><strong>Validation</strong></li>
+                    <li><a href='https://validator.w3.org/nu/?doc=https%3A%2F%2Fbootsblogger-demo.blogspot.com%2F'>Test validation</a> (you'll receive a warning, read <a href='http://a11yproject.com/checklist.html#aria-roles'>this article</a>).</li>
+                  </ul>
+                </div>
+              </b:includable>
+            </b:widget>
+          </b:section>
+        </aside><!-- /.sidebar -->
+      </div><!-- /.row -->
     </div><!-- /.container -->
-  </div><!-- /.widget-block-1 -->
-</b:if>
 
 
-<b:comment>
-=================================================
-Footer
-================================================= </b:comment>
+    <!-- WIDGET 1
+    ================================================== -->
+    <div class='widget-1' id='widget-1'>
+      <div class='container'>
+        <b:section class='wg-box wg-box-white wg-md-4 wg-sm-6' id='widget-1-section'>
+          <b:widget id='HTML3' locked='false' title='HTML/JavaScript' type='HTML'>
+            <b:includable id='main'>
+              <!-- only display title if it's non-empty -->
+              <b:if cond='data:title != &quot;&quot;'>
+                <h2 class='title'><data:title/></h2>
+              </b:if>
+              <div class='widget-content'>
+                <ul class='nav'>
+                  <li class='nav-item'><a class='nav-link' href="#">Cras justo odio</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Dapibus ac facilisis in</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Morbi leo risus</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Porta ac consectetur ac</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Vestibulum at eros</a></li>
+                </ul>
+              </div>
+            </b:includable>
+          </b:widget>
+          <b:widget id='HTML4' locked='false' title='HTML/JavaScript' type='HTML'>
+            <b:includable id='main'>
+              <!-- only display title if it's non-empty -->
+              <b:if cond='data:title != &quot;&quot;'>
+                <h2 class='title'><data:title/></h2>
+              </b:if>
+              <div class='widget-content'>
+                <ul class='nav'>
+                  <li class='nav-item'><a class='nav-link' href="#">Cras justo odio</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Dapibus ac facilisis in</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Morbi leo risus</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Porta ac consectetur ac</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Vestibulum at eros</a></li>
+                </ul>
+              </div>
+            </b:includable>
+          </b:widget>
+          <b:widget id='HTML5' locked='false' title='HTML/JavaScript' type='HTML'>
+            <b:includable id='main'>
+              <!-- only display title if it's non-empty -->
+              <b:if cond='data:title != &quot;&quot;'>
+                <h2 class='title'><data:title/></h2>
+              </b:if>
+              <div class='widget-content'>
+                <ul class='nav'>
+                  <li class='nav-item'><a class='nav-link' href="#">Cras justo odio</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Dapibus ac facilisis in</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Morbi leo risus</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Porta ac consectetur ac</a></li>
+                  <li class='nav-item'><a class='nav-link' href="#">Vestibulum at eros</a></li>
+                </ul>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+    </div>
 
-<footer class='footer' id='footer'>
-  <div class='container'>
-    <b:if cond='data:widgets any (w =&gt; w.sectionId == "b-section-footer-links")'>
-      <b:section id='b-section-footer-links' maxwidgets='1' name='Footer links' showaddelement='no'>
-        <!--(bake widgets/b-section-footer-links__LinkList2.xml)-->
-      </b:section>
-    </b:if>
-    <p>&#169; <data:blog.title/>.</p>
-    <p>
-      <a b:whitespace='remove' expr:href='data:blog.bloggerUrl'>
-        <b:include data='{ width: 24, height: 24, fillBg: "#ff5722", fillB: "#fff", class: "align-middle mr-1" }' name='assets.bloggerIcon'/>
-        <b:message name='messages.poweredByBlogger'/>
-      </a>
-    </p>
-  </div><!-- /.container -->
-</footer><!-- /.footer -->
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class='footer' id='footer' role='contentinfo'>
+      <div class='container'>
+        <!--(bake /includes/foot-content/foot-info.xml)-->
+      </div>
+    </footer>
 
 
-<b:comment>
-=================================================
-JavaScript
-================================================= </b:comment>
-
-<b:include name='assets.requiredJs'/>
-
-<b:comment>=== Template JavaScript ===</b:comment>
-<script>
-//<![CDATA[
-<!--(bake script.js)-->
-//]]>
-</script>
+    <!-- JavaScript
+    ================================================== -->
+    <!--(bake /includes/foot-content/foot-js.xml)-->
 
 
-<b:comment>
-=================================================
-Includable
-================================================= </b:comment>
-
-<!--(bake includable/_index.xml)-->
-
-
-<b:comment>
-=================================================
-Default markups
-================================================= </b:comment>
-
-<!--(bake default-markups/_index.xml)-->
-
-
-</body>
-</html>
+  <!-- Remove Blogger's default JavaScript -->
+  &lt;!--</body>--&gt;
+  &lt;/body&gt;
+  <!-- Or you can use normal `</body>` tag -->
+</HTML>
