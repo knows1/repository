@@ -24,13 +24,13 @@
 
 
 
-<!-- <nav>
+<nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
-</nav> -->
+</nav> 
 
 
 <!--4-->
@@ -39,7 +39,11 @@
 SassPermalink
 The inline styles used in _includes/navigation.html is not a best practice, let’s style the current page with a class instead.-->
 
-
+<nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>
 
 
 
