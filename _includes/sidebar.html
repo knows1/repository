@@ -1,0 +1,52 @@
+<div class="navmenu bd-navmenu">
+  <div class="navmenu-content">
+    <form class="bd-search d-flex align-items-center">
+      <button class="btn-link bd-search-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+      </button>
+      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+      <div class="dropdown-menu bd-search-results" id="search-results"></div>
+    </form>
+  </div>
+</div>
+
+<div class="collapse bd-navmenu-scroll d-md-block" id="bd-docs-nav">
+  <div class="navmenu bd-navmenu">
+    <nav class="navmenu-nav">
+      {% assign page_slug = page.url | split: '/' | last %}
+      {% for group in site.data.nav %}
+      {% assign link = group.pages | first %}
+      {% assign link_slug = link.title | slugify %}
+      {% assign group_slug = group.title | slugify %}
+      {% assign active = nil %}
+
+      {% if page.group == group_slug %}
+        {% assign active = 'active' %}
+      {% endif %}
+
+      <div class="nav-item {{ active }}">
+        <a class="nav-link nav-link-sm {{ active }}" href="{{ site.baseurl }}/{{ group_slug }}/{{ link_slug }}{% if link_slug %}/{% endif %}">
+          {{ group.title }}
+        </a>
+
+        <div class="sub">
+          {% for doc in group.pages %}
+            {% assign doc_slug = doc.title | slugify %}
+            {% assign active = nil %}
+
+            {% if page.group == group_slug and page_slug == doc_slug %}
+              {% assign active = 'active' %}
+            {% endif %}
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm {{ active }}" href="{{ site.baseurl }}/{{ group_slug }}/{{ doc_slug }}/">
+                {{ doc.title }}
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </nav>
+  </div>
+</div>
