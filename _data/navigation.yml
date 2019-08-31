@@ -1,4 +1,8 @@
+
+
 - name: Home
-  link: /Repository
+  link: /
 - name: About
-  link: /Repository/about.html
+  link: /about.html
+- name: Blog
+  link: /blog.html
