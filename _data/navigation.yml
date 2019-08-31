@@ -1,7 +1,7 @@
 
 
 - name: Home
-  link: /repository/
+  link: /
 - name: About
   link: /repository/about.html
 - name: Blog
