@@ -47,11 +47,6 @@ breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: "_posts"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
