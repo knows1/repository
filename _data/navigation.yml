@@ -3,6 +3,6 @@
 - name: Home
   link: /Repository/
 - name: About
-  link: /about.html
+  link: /Repository/about.html/
 - name: Blog
-  link: /_posts/
+  link: /Repository/blog.html
