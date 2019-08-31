@@ -7,19 +7,18 @@
 -->
 
 <!--اضافة التضميم-->
-<!--
 
 <nav>
   <a href="/repository/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a>
   <a href="/repository/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>About</a>
 </nav>
 
--->
 
-<!--تطبيق التضميم مع المتغيير-->
+
+
 
 <div class="topnav">
-  <a class="/repository/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a>
+  <a class="active" href="/repository/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="/repository/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>About</a>
