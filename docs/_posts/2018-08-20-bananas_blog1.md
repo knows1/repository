@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /repository/bananas_blog1/
+# permalink: /repository/bananas_blog1/
 
 author: jill
 ---
