@@ -18,16 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: knows1
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/repository" # the subpath of your site, e.g. /blog
-url: "https://knows1.github.io/repository/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "knows1/repository" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
+email: your-email@example.com
 
 twitter_username: #jekyllrb
 github_username:  knows1
@@ -37,6 +29,22 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+
+
+# Site Settings
+locale                   : "en-US"
+title                    : "knows1"
+title_separator          : "-"
+subtitle                 : "حين تبحث عن المعرفة" # site tagline that appears below site title in masthead
+name                     : "Sami"
+description              : "مدونة شخصية."
+url                      : "https://knows1.github.io/repository" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/theme" # the subpath of your site, e.g. "/blog"
+repository               : "knows1/repository" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+masthead_title           : "knows1" # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : true # true, false (default)
+words_per_minute         : 200
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
