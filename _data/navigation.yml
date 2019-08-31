@@ -1,8 +1,8 @@
 
 
 - name: Home
-  link: /Repository/
+  link: /repository/
 - name: About
-  link: /Repository/about.html/
+  link: /repository/about.html/
 - name: Blog
-  link: /Repository/blog.html
+  link: /repository/blog.html
