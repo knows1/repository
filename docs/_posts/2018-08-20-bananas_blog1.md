@@ -1,6 +1,6 @@
 ---
 layout: post
-# permalink: /repository/bananas_blog1/
+# permalink: /repository/2018-08-20-bananas_blog1.md/
 
 author: jill
 ---
