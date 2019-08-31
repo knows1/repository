@@ -40,8 +40,8 @@ subtitle                 : "حين تبحث عن المعرفة" # site tagline 
 name                     : "Sami"
 description              : "مدونة شخصية."
 url                      : "https://knows1.github.io/repository/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/_posts" # the subpath of your site, e.g. "/blog"
-repository               : "knows1/repository/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : "/repository" # the subpath of your site, e.g. "/blog"
+repository               : "knows1/repository" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 masthead_title           : "knows1" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
