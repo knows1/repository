@@ -1,4 +1,18 @@
+
+<!--
 <nav>
   <a href="/repository/">Home</a>
   <a href="/repository/about.html">About</a>
+</nav>
+-->
+
+<!--اضافة التضميم-->
+
+<nav>
+  <a href="/repository/" {% if page.url == "/" %}style="color: red;"{% endif %}>
+    Home
+  </a>
+  <a href="/repository/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
+    About
+  </a>
 </nav>
