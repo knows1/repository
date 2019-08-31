@@ -45,6 +45,14 @@ repository               : "knows1/repository" # GitHub username/repo-name e.g. 
 masthead_title           : "knows1" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
