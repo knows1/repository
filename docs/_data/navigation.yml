@@ -1,20 +1,20 @@
 
 - name: Home
   link: /repository/
-
+  class: "fa fa-fw fa-hom"
 
 - name: About
   link: /repository/about.html
-
+  class: "fa fa-fw fa-hom"
 
 - name: Search
   link: /knows1/
-
+  class: "fa fa-fw fa-search"
 
 - name: Contact
   link: #
-
+  class: "fa fa-fw fa-envelope"
 
 - name: Login
   link: #
-
+  class: "fa fa-fw fa-user"
