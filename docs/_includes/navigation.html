@@ -25,14 +25,19 @@
 
 
 
+
+
 <div class="navbar">
   {% for item in site.data.navigation %}
-  <a class="active , navbar , navbar a , avbar a:hover " href="{{ item.link }}" {% if page.url == "item.link" %}style="color: red;"{% endif %}><i 
+  <a class="active" href="{{ item.link }}" {% if page.url == "item.link" %}style="color: red;"{% endif %}><i 
 
-class="fa fa-fw fa-home"
+{% if Home == class="fa fa-fw fa-home"%}
+{% if Search == class="fa fa-fw fa-search"%}
 
 
 ></i> {{ item.name }}</a> 
+
+
   {% endfor %}
 </div>
 
@@ -42,9 +47,8 @@ class="fa fa-fw fa-home"
 
 
 
-
 <style>
-
+body {font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
   width: 100%;
