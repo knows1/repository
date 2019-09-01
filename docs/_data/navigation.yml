@@ -1,7 +1,7 @@
 
 - name: Home
   link: /repository/
-  class: "active"
+  class1: "active"
   class: "fa fa-fw fa-home"
 
 - name: About
