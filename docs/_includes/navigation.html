@@ -34,15 +34,6 @@
 </div>
 -->
 
-
-<!--
-###########
- 1-   <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>{{ item.name }}</a>{% endfor %}</nav>
- 2-  <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-
-###########
--->
-
 <div class="navbar">
   {% for item in site.data.navigation %}
   <a class="{{ item.class1 }}" href="{{ item.link }}"><i class="{{ item.class }}"></i> {{ item.name }}</a> 
@@ -73,7 +64,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .active {
-  background-color: #4a4299;
+  background-color: ##cedaeb;
 }
 
 @media screen and (max-width: 500px) {
