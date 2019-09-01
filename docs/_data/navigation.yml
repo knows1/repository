@@ -2,3 +2,9 @@
   link: /repository/
 - name: About
   link: /repository/about.html
+- name: Search
+  link: #
+- name: Contact
+  link: #
+- name: Login
+  link: #
