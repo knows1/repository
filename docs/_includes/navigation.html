@@ -26,12 +26,20 @@
 
 
 
-
-<div class="navbar">
+div class="navbar">
   {% for item in site.data.navigation %}
-  <a class="active" href="{{ item.link }}" {% if page.url == "item.link" %}style="color: red;"{% endif %}><i class="fa fa-fw fa-home"></i>{{ item.name }}</a> 
+  <a class="active" href="{{ item.link }}" {% if page.url == "item.link" %}style="color: red;"{% endif %}><i class="{% if page.url == "/repository/ %}fa fa-fw fa-home" "{% if page.url == "/repository/about.html %}"fa fa-fw fa-user"
+
+
+
+
+
+></i>{{ item.name }}</a> 
   {% endfor %}
 </div>
+
+
+
 
 
 
