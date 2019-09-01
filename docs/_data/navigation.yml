@@ -6,7 +6,7 @@
 
 - name: About
   link: /repository/about.html
-  class: "fa fa-fw fa-about"
+  class: "fa fa-tty"
 
 - name: Search
   link: /knows1/
