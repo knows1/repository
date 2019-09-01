@@ -1,11 +1,11 @@
 
 - name: Home
   link: /repository/
-  class: "fa fa-fw fa-hom"
+  class: "fa fa-fw fa-home"
 
 - name: About
   link: /repository/about.html
-  class: "fa fa-fw fa-hom"
+  class: "fa fa-fw fa-home"
 
 - name: Search
   link: /knows1/
