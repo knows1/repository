@@ -45,7 +45,7 @@
 
 <div class="navbar">
   {% for item in site.data.navigation %}
-  <a class="{{ item.class1 }}" href="{{ item.link }}" {% if page.url == item.link %}style="color: red; " {% endif %} ><i class="{{ item.class }}"></i> {{ item.name }}</a> 
+  <a class="{{ item.class1 }}" href="{{ item.link }}" ><i class="{{ item.class }}"></i> {{ item.name }}</a> 
 {% endfor %}
 </div>
 
