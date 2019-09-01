@@ -1,5 +1,6 @@
- class: "active"
+
 - name: Home
+ class: "active"
   link: /repository/
  class: "fa fa-fw fa-hom"
 
