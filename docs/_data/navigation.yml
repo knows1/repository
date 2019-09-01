@@ -1,0 +1,4 @@
+- name: Home
+  link: /repository/
+- name: About
+  link: /repository/about.html
