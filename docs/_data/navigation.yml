@@ -7,7 +7,7 @@
 - name: Blog
   link: /repository/blog.html
   class: "fa fa-pencil"
-
+  imeer: /repository/
 
 - name: Search
   link: /knows1/
