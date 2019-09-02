@@ -1,5 +1,23 @@
 ---
 layout: default
 title: Home
+
+
+- login0: 0
+  logout: "تسجبل الخروج"
+
+- login2: 2
+  Sign Up: "التسجيل في الموقع"
+
+- login3: 3
+  Registration: "تحتاج لتسجيل لرؤية المحتوى"
+
+
 ---
 <h1>{{ "Hello World!" | downcase }}</h1>
+
+
+<p> man ist "1"
+{%   if (login0 == 0) "{{ item.logout }}"
+  elseif (login2 == 1) "{{ item.Sign Up }}"
+  elseif (login2 == 2) "{{ item.Registration }}" %} </p>
