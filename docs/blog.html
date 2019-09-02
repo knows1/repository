@@ -3,9 +3,6 @@ layout: default
 title: Blog
 ---
 
-{% assign url = "knows1.github.io" %}
-
-
 
 
 <h1>Latest Posts</h1>
@@ -13,7 +10,7 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ "/repository/" | prepend: url }} {{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="/repository/{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
