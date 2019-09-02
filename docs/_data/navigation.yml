@@ -21,6 +21,10 @@
   link: #
   class: "fa fa-fw fa-user"
 
+- name: Staff
+  link: /repository/staff.html
+  class: "fa fa-users"
+
 - name: About
   link: /repository/about.html
   class: "fa fa-tty"
