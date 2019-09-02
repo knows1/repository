@@ -4,9 +4,10 @@
   class1: "active"
   class: "fa fa-fw fa-home"
 
-- name: About
-  link: /repository/about.html
-  class: "fa fa-tty"
+- name: Blog
+  link: /blog.html
+  class: "fa fa-pencil"
+
 
 - name: Search
   link: /knows1/
@@ -20,7 +21,9 @@
   link: #
   class: "fa fa-fw fa-user"
 
-
+- name: About
+  link: /repository/about.html
+  class: "fa fa-tty"
 
 
 
