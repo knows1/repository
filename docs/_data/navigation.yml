@@ -22,13 +22,13 @@
 
 
 - login0: 0
-  logout: تسجبل الخروج
+  logout: "تسجبل الخروج"
 
 - login2: 2
-  Sign Up: التسجيل في الموقع
+  Sign Up: "التسجيل في الموقع"
 
 - login3: 3
-  Registration: تحتاج لتسجيل لرؤية المحتوى
+  Registration: "تحتاج لتسجيل لرؤية المحتوى"
 
 
 
