@@ -7,6 +7,6 @@ title: Home
 
 
 
- {% if (login0 == 0 %} {{ item.logout }}
- {% elseif (login2 == 1 %} {{ item.Sign_Up }}
- {% elseif (login2 == 2 %} {{ item.Registration }} {% endif %}
+  if {% login0 == 0 %} {{ item.logout }}
+ elseif {% login2 == 1 %} {{ item.Sign_Up }}
+  elseif {% login2 == 2 %} {{ item.Registration }} {% endif %}
