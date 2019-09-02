@@ -48,6 +48,14 @@
 {% endfor %}
 </div>
 
+
+<p> man ist "1"
+{%   if (login0 == 0) "{{ item.logout }}"
+  elseif (login2 == 1) "{{ item.Sign Up }}"
+  elseif (login2 == 2) "{{ item.Registration }}" %} </p>
+
+
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
