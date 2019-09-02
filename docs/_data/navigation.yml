@@ -5,7 +5,7 @@
   class: "fa fa-fw fa-home"
 
 - name: Blog
-  link: /blog.html
+  link: /repository/blog.html
   class: "fa fa-pencil"
 
 
