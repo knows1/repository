@@ -18,6 +18,9 @@ defaults:
     values:
       layout: "default"
 
+
+
+url: "https://knows1.github.io/repository/"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
