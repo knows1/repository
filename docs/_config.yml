@@ -18,7 +18,7 @@ defaults:
     values:
       layout: "default"
 
-
+github_comments_repository: "knows1/repository"
 
 url: "https://knows1.github.io/repository/"
 plugins:
@@ -26,4 +26,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-comment_issue_id: 1
+
