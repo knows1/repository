@@ -19,6 +19,7 @@ defaults:
       layout: "default"
 
 github_comments_repository: "knows1/repository"
+github_comments_issueid: 1
 
 url: "https://knows1.github.io/repository/"
 plugins:
