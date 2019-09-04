@@ -25,3 +25,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+comment_issue_id: 1
