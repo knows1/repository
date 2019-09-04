@@ -244,6 +244,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  jekyll-feed
+  jekyll-seo-tag
+  jekyll-sitemap
 
 BUNDLED WITH
    2.0.2
